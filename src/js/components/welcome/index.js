@@ -58,14 +58,14 @@ const MusicLogo = styled.img`
 `;
 
 const JsLogo = styled.img`
-   margin-top:14px;
    position: absolute;
-   width: 43px;
-   top: 20px;
+   width: 7rem;
+   top: 23px;
+   margin-left:5px;
    animation: ${animation.scale} 0.3s ease;
 
    ${breakpointSm} {
-      width: 10.5rem;
+      width: 1.5rem;
       top: 10px;
    }
 `;
@@ -83,7 +83,7 @@ export default class WelcomScreen extends Component {
       setTimeout(() => {
          this.setState({
             showMusic: true,
-            width: '18rem'
+            width: '22.5rem'
          });
       }, 300);
       setTimeout(() => {
@@ -115,7 +115,7 @@ export default class WelcomScreen extends Component {
                   <MusicLogo src="images/Bamboo.png" />
                </PartContainer>
                <PartContainer hidden={!this.state.showExtension}>
-                  <JsLogo src="images/zy.png" />
+                  <JsLogo src="images/Music.png" />
                </PartContainer>
             </LogoContainer>
          </Container>
