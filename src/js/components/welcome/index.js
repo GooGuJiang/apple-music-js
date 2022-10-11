@@ -61,7 +61,6 @@ const JsLogo = styled.img`
    position: absolute;
    width: 7rem;
    top: 23px;
-   margin-left:5px;
    animation: ${animation.scale} 0.3s ease;
 
    ${breakpointSm} {
@@ -83,7 +82,7 @@ export default class WelcomScreen extends Component {
       setTimeout(() => {
          this.setState({
             showMusic: true,
-            width: '22.5rem'
+            width: '22.2rem'
          });
       }, 300);
       setTimeout(() => {
