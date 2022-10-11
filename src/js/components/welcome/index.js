@@ -58,13 +58,14 @@ const MusicLogo = styled.img`
 `;
 
 const JsLogo = styled.img`
+   margin-top:14px;
    position: absolute;
-   width: 2.25rem;
+   width: 43px;
    top: 20px;
    animation: ${animation.scale} 0.3s ease;
 
    ${breakpointSm} {
-      width: 1.5rem;
+      width: 10.5rem;
       top: 10px;
    }
 `;
@@ -111,10 +112,10 @@ export default class WelcomScreen extends Component {
                   <AppleLogo src="images/logo_apple.svg" />
                </PartContainer>
                <PartContainer hidden={!this.state.showMusic}>
-                  <MusicLogo src="images/logo_music.svg" />
+                  <MusicLogo src="images/Bamboo.png" />
                </PartContainer>
                <PartContainer hidden={!this.state.showExtension}>
-                  <JsLogo src="images/logo_js.svg" />
+                  <JsLogo src="images/zy.png" />
                </PartContainer>
             </LogoContainer>
          </Container>
